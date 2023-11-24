@@ -1,0 +1,13 @@
+<h2>{{ client.name }}</h2>
+<p>Citizenship: {{ client.citizenship }}</p>
+<p>Birth Year: {{ client.birth_year }}</p>
+<p>Work Place: {{ client.work_place }}</p>
+{% for account in accounts %}
+<h>Номер карты</h>{{ account.number  }}
+<h>Тип аккаунта </h>{{ account.account_type }}
+{% endfor %}
+{% for credit in credits %}
+<h> Сумма кредита</h>{{ credit.sum }}
+<h> Дата кредита </h>{{ credit.date }}
+{% endfor %}
+
